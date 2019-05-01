@@ -1,16 +1,16 @@
 .foot {
-    flex-shrink: 0;
-    height: 150px;
-    display: flex;
-    align-items: flex-end;
-    flex-direction:row;
-    justify-content:flex-end;
-    background-color:$blue-grey60;
+  flex-shrink: 0;
+  height: $footer-height;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: $blue-grey60;
 }
 .foot__item {
-    padding:20px;
+  padding: 20px;
 
-    ul {
-        list-style: none;
-    }
+  ul {
+    list-style: none;
+  }
 }
