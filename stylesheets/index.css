@@ -1,43 +1,69 @@
 html,
 body,
 ul,
-ol {
+ol,
+p {
   margin: 0;
   padding: 0;
 }
 
 header {
   background-color: #48647f;
-  height: 300px;
+  height: 120px;
+  padding: 20px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
-header #header__image {
-  background-image: url(assets/images/logo1.svg);
+header .header__logo-img {
+  height: 50px;
+  width: 50px;
 }
-@media (min-width: 576px) {
-  header #footer_logo {
-    display: block;
-  }
+header #header__logo {
+  order: 1;
+}
+header #header__nav {
+  display: none;
+  order: 3;
+}
+header #header__auth {
+  order: 2;
+}
+header a {
+  padding: 5px;
+  display: block;
+  color: #f1f5f8;
+  text-decoration: none;
+  /* no underline */
+}
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+header li {
+  display: inline-block;
+}
+header a:hover {
+  background-color: #102a42;
+  text-decoration: underline;
 }
 @media (min-width: 768px) {
   header {
     height: 120px;
     padding: 50px;
   }
+  header #header__logo {
+    order: 1;
+  }
+  header #header__nav {
+    display: block;
+    order: 2;
+  }
+  header #header__auth {
+    order: 3;
+  }
 }
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-nav li {
-  display: inline-block;
-}
-nav a {
-  display: block;
-  padding: 6px 12px;
-  text-decoration: none;
-}
-
 .container {
   flex: 1;
   background: lightgrey;
