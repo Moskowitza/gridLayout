@@ -7,10 +7,23 @@ ol {
 }
 
 header {
-  background-color: orange;
-  margin: 0;
+  background-color: #48647f;
+  height: 300px;
 }
-
+header #header__image {
+  background-image: url(assets/images/logo1.svg);
+}
+@media (min-width: 576px) {
+  header #footer_logo {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  header {
+    height: 120px;
+    padding: 50px;
+  }
+}
 nav ul {
   margin: 0;
   padding: 0;
@@ -42,16 +55,30 @@ nav a {
 
 .foot {
   flex-shrink: 0;
-  height: 200 px;
+  height: 120px;
+  padding: 20px;
   display: flex;
   align-items: flex-end;
   flex-direction: row;
-  justify-content: flex-end;
-  background-color: #617d98;
+  justify-content: space-between;
+  background-color: #9eb2c7;
 }
-
-.foot__item {
-  padding: 20px;
+.foot #footer_logo {
+  display: none;
+}
+.foot p {
+  margin-bottom: 5px;
+}
+@media (min-width: 576px) {
+  .foot #footer_logo {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .foot {
+    height: 120px;
+    padding: 50px;
+  }
 }
 .foot__item ul {
   list-style: none;

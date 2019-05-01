@@ -1,15 +1,43 @@
 .foot {
   flex-shrink: 0;
-  height: $footer-height;
+  height: 120px;
+  padding: 20px;
   display: flex;
   align-items: flex-end;
   flex-direction: row;
-  justify-content: flex-end;
-  background-color: $blue-grey60;
+  justify-content: space-between;
+  background-color: $blue-grey40;
+  #footer_logo {
+    display: none;
+  }
+  p {
+    margin-bottom: 5px;
+  }
+  // Small devices
+  @include sm {
+    #footer_logo {
+      display: block;
+    }
+  }
+
+  // Medium devices
+  @include md {
+    height: 120px;
+    padding: 50px;
+  }
+
+  // Large devices
+  @include lg {
+  }
+
+  // Extra large devices
+  @include xl {
+  }
+
+  @include rwd(1400) {
+  }
 }
 .foot__item {
-  padding: 20px;
-
   ul {
     list-style: none;
   }

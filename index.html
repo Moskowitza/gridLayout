@@ -8,20 +8,21 @@
     <link rel="stylesheet" href="stylesheets/index.css" />
   </head>
   <body>
-    <header>
+    <header id="header">
       <div id="banner">
         Big Fat Banner
         <img
+          id="header__image"
           style="width:50px; height:50px"
           src="assets/images/logo1.svg"
           alt="logo"
         />
       </div>
-      <nav>
-        <ul id="topNav" class="navlist">
-          <li class="navlist-item">Route Finder</li>
-          <li class="navlist-item">Shop</li>
-          <li class="navlist-item">Login</li>
+      <nav id="topNav">
+        <ul class="navlist">
+          <li class="navlist__item">Route Finder</li>
+          <li class="navlist__item">Shop</li>
+          <li class="navlist__item">Login</li>
         </ul>
         <div id="auth"></div>
       </nav>
@@ -60,19 +61,28 @@
       <div class="foot__item">
         <div class="foot__item_address">
           <p>GUNKS</p>
-          <p>5281 Route 44-55</p>
-          <p>Kerhonkson, NY 12446</p>
+          <p>
+            5281 Route 44-55 <br />
+            Kerhonkson, NY 12446
+          </p>
         </div>
       </div>
       <div class="foot__item">
-        <div id="footer_logo">💩</div>
+        <img
+          id="footer-logo"
+          style="width:50px; height:50px"
+          src="assets/images/logo1.svg"
+          alt="logo"
+        />
       </div>
       <div class="foot__item">
-        <ul id="bottomNav">
-          <li>nav account 1</li>
-          <li>nav account 2</li>
-          <li>nav account 3</li>
-        </ul>
+        <p>GUNKS</p>
+        <p>
+          (845) 255-0919 <br />
+          <a href="https://www.mohonkpreserve.org/who-we-are/contact-us.html"
+            >contact us</a
+          >
+        </p>
       </div>
     </footer>
   </body>
