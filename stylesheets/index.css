@@ -26,13 +26,28 @@ header #header__auth {
   order: 3;
 }
 header #header__nav {
-  display: none;
-  background-color: pink;
-  position: absolute;
-  top: 0;
-  left: 0;
+  order: 1;
   height: 100%;
-  width: 100%;
+  /* 100% Full-height */
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  /* Stay at the top */
+  left: 0;
+  background-color: #48647f;
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  padding-top: 60px;
+  /* Place content 60px from the top */
+  transition: 0.5s;
+  color: white;
+}
+header #header__nav-navlist {
+  transition: 0.3s;
 }
 header #header__nav-openbtn {
   display: block;
@@ -49,6 +64,8 @@ header ul {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 header li {
   display: inline-block;

@@ -98,25 +98,23 @@
       </div>
     </footer>
     <script>
-      const openbtn = document.getElementById("header__nav-openbtn");
-      const closebtn = document.getElementById("header__nav-closebtn");
-      const menu = document.getElementById("header__nav");
-      openbtn.addEventListener("click", toggleMenu);
-      closebtn.addEventListener("click", toggleMenu);
-      let isOpen = false;
-      function toggleMenu() {
-        isOpen = !isOpen;
-        console.log("toggled" + isOpen);
-        if (isOpen) {
-          menu.style.display = "block";
-
-          openbtn.style.display = "none";
-        } else {
-          menu.style.display = "none";
-
-          openbtn.style.display = "block";
+      (function() {
+        const openbtn = document.getElementById("header__nav-openbtn");
+        const closebtn = document.getElementById("header__nav-closebtn");
+        const menu = document.getElementById("header__nav");
+        openbtn.addEventListener("click", toggleMenu);
+        closebtn.addEventListener("click", toggleMenu);
+        let isOpen = false;
+        function toggleMenu() {
+          isOpen = !isOpen;
+          console.log("toggled" + isOpen);
+          if (isOpen) {
+            menu.style.width = "100%";
+          } else {
+            menu.style.width = "0";
+          }
         }
-      }
+      })();
     </script>
   </body>
 </html>

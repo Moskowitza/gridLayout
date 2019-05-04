@@ -16,15 +16,21 @@ header {
     order: 3;
   }
   #header__nav {
-    display: none;
-    background-color: pink;
-    position: absolute;
-    top: 0;
+    order: 1;
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
     left: 0;
-    height: 100%;
-    width: 100%;
+    background-color: $blue-grey70;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s;
+    color: white;
   }
   #header__nav-navlist {
+    transition: 0.3s;
   }
   #header__nav-closebtn {
   }
@@ -43,6 +49,8 @@ header {
     margin: 0;
     padding: 0;
     list-style: none;
+    display: flex;
+    flex-direction: column;
   }
   li {
     display: inline-block;
