@@ -12,9 +12,14 @@ header {
   #header__logo {
     order: 1;
   }
-  #header__nav {
+  #header__nav-navlist {
     display: none;
     order: 3;
+  }
+  #header__nav-openbtn {
+  }
+  #header__nav-closebtn {
+    display: none;
   }
   #header__auth {
     order: 2;

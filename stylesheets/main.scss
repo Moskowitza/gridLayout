@@ -1,13 +1,20 @@
-
-.container{
-    flex:1;
-    background: lightgrey;
+.container {
+  flex: 1;
+  background: lightgrey;
+  grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
+  grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
 }
-.content{
-    padding:20px;
-    margin:20px;
-    background:red;
+.content {
+  padding: 20px;
+  margin: 20px;
+  background: red;
 }
-    .content__text{
-    font-family:arial;
-    }
+.content__text {
+  font-family: arial;
+}
+.content__img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  box-shadow: 2px 5px 5px $blue-grey80;
+}

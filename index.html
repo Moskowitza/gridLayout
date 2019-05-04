@@ -18,25 +18,25 @@
         <span>Big Fat Banner</span>
       </div>
       <nav id="header__nav">
-        <ul class="navlist">
+        <div id="header__nav-closebtn">close</div>
+        <ul id="header__nav-navlist">
           <li class="navlist__item"><a href="./404.html">Route Finder</a></li>
           <li class="navlist__item"><a href="./404.html">Shop</a></li>
           <li class="navlist__item"><a href="./404.html">Blog</a></li>
         </ul>
       </nav>
+      <div id="header__nav-openbtn">open</div>
       <div id="header__auth"><a href="./404.html">Login</a></div>
     </header>
     <main class="container">
       <div id="content-1" class="content">
+        <img class="content__img" src="assets/images/img1.jpg" alt="Bonnie's Roof"></img>
         <div class="content__text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-          aliquid, eum tenetur alias suscipit possimus, quas recusandae vitae
-          provident quasi minus. Earum officia labore eius exercitationem
-          mollitia cupiditate velit aliquid aperiam nam. Animi porro, minima ex
-          iusto dolorum eos doloribus.
+          Sign up for a free account
         </div>
       </div>
       <div id="content-2" class="content">
+        <img class="content__img" src="assets/images/img2.jpg" alt="wisecrack"></img>
         <div class="content__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
           aliquid, eum tenetur alias suscipit possimus, quas recusandae vitae
@@ -46,6 +46,7 @@
         </div>
       </div>
       <div id="content-3" class="content">
+        <img class="content__img" src="assets/images/img3.jpg" alt="gunks route"></img>
         <div class="content__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
           aliquid, eum tenetur alias suscipit possimus, quas recusandae vitae
@@ -84,5 +85,19 @@
         </p>
       </div>
     </footer>
+    <script>
+    const openbtn=document.getElementById("header__nav-openbtn");
+    const closebtn=document.getElementById("header__nav-closebtn");
+    const menu=document.getElementById("header__nav-navlist");
+    openbtn.addEventListener("click",toggleMenu)
+    closebtn.addEventListener("click",toggleMenu)
+    let isOpen=false;
+    function toggleMenu(){ isOpen=!isOpen console.log("toggled"+isOpen)
+    isOpen ?  menu.style.display="none": menu.style.display="block";
+      isOpen ?  closebtn.style.display="block": closebtn.style.display="none";
+      isOpen ?  openbtn.style.display="none": openbtn.style.display="block";}
+      
+
+    </script>
   </body>
 </html>
