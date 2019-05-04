@@ -10,19 +10,27 @@ header {
     width: 50px;
   }
   #header__logo {
-    order: 1;
-  }
-  #header__nav-navlist {
-    display: none;
-    order: 3;
-  }
-  #header__nav-openbtn {
-  }
-  #header__nav-closebtn {
-    display: none;
+    order: 2;
   }
   #header__auth {
-    order: 2;
+    order: 3;
+  }
+  #header__nav {
+    display: none;
+    background-color: pink;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  #header__nav-navlist {
+  }
+  #header__nav-closebtn {
+  }
+  #header__nav-openbtn {
+    display: block;
+    order: 1;
   }
 
   a {

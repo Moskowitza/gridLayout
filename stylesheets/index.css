@@ -20,14 +20,23 @@ header .header__logo-img {
   width: 50px;
 }
 header #header__logo {
-  order: 1;
+  order: 2;
+}
+header #header__auth {
+  order: 3;
 }
 header #header__nav {
   display: none;
-  order: 3;
+  background-color: pink;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
-header #header__auth {
-  order: 2;
+header #header__nav-openbtn {
+  display: block;
+  order: 1;
 }
 header a {
   padding: 5px;

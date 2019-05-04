@@ -30,13 +30,21 @@
     </header>
     <main class="container">
       <div id="content-1" class="content">
-        <img class="content__img" src="assets/images/img1.jpg" alt="Bonnie's Roof"></img>
+        <img
+          class="content__img"
+          src="assets/images/img1.jpg"
+          alt="Bonnie's Roof"
+        />
         <div class="content__text">
           Sign up for a free account
         </div>
       </div>
       <div id="content-2" class="content">
-        <img class="content__img" src="assets/images/img2.jpg" alt="wisecrack"></img>
+        <img
+          class="content__img"
+          src="assets/images/img2.jpg"
+          alt="wisecrack"
+        />
         <div class="content__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
           aliquid, eum tenetur alias suscipit possimus, quas recusandae vitae
@@ -46,7 +54,11 @@
         </div>
       </div>
       <div id="content-3" class="content">
-        <img class="content__img" src="assets/images/img3.jpg" alt="gunks route"></img>
+        <img
+          class="content__img"
+          src="assets/images/img3.jpg"
+          alt="gunks route"
+        />
         <div class="content__text">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
           aliquid, eum tenetur alias suscipit possimus, quas recusandae vitae
@@ -86,18 +98,25 @@
       </div>
     </footer>
     <script>
-    const openbtn=document.getElementById("header__nav-openbtn");
-    const closebtn=document.getElementById("header__nav-closebtn");
-    const menu=document.getElementById("header__nav-navlist");
-    openbtn.addEventListener("click",toggleMenu)
-    closebtn.addEventListener("click",toggleMenu)
-    let isOpen=false;
-    function toggleMenu(){ isOpen=!isOpen console.log("toggled"+isOpen)
-    isOpen ?  menu.style.display="none": menu.style.display="block";
-      isOpen ?  closebtn.style.display="block": closebtn.style.display="none";
-      isOpen ?  openbtn.style.display="none": openbtn.style.display="block";}
-      
+      const openbtn = document.getElementById("header__nav-openbtn");
+      const closebtn = document.getElementById("header__nav-closebtn");
+      const menu = document.getElementById("header__nav");
+      openbtn.addEventListener("click", toggleMenu);
+      closebtn.addEventListener("click", toggleMenu);
+      let isOpen = false;
+      function toggleMenu() {
+        isOpen = !isOpen;
+        console.log("toggled" + isOpen);
+        if (isOpen) {
+          menu.style.display = "block";
 
+          openbtn.style.display = "none";
+        } else {
+          menu.style.display = "none";
+
+          openbtn.style.display = "block";
+        }
+      }
     </script>
   </body>
 </html>
